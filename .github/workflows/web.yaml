@@ -1,4 +1,4 @@
-name: AJSB
+name: AJSB TESTING
 
 on: [push, pull_request]
 
