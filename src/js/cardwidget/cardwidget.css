@@ -1,0 +1,95 @@
+.main {
+    position:absolute;
+    top: 50%;
+    left:50%;
+    background: rgb(226, 217, 217);
+    width: 40vh;
+    height: 25vh;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    border-radius: 3%;
+    font-size: 100%;
+}
+
+.images {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    height: 20%;
+    margin: 15% 5% 0 10%
+}
+
+.image-container {
+    box-sizing: border-box;
+    display: block;
+    padding: 1px;
+    width: 25%;
+    height: 100%;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.image-not-active {
+    opacity: 0.2;
+}
+
+.input {
+    box-sizing: border-box;
+    margin: 2% 0 0 25%;
+    width: 72%;
+    height: 15%;
+    border: 3px solid #bdbdbd;
+    border-radius: 0.5rem;
+    font-size: 1.6vw;
+    font-weight: 400;
+    text-align:center;
+}
+
+.input-card-checked {
+    background-color: green;
+}
+
+.input-card-unchecked {
+    background-color: red;
+}
+
+.input:focus {
+    outline: none;
+    border: 3px solid #949494;
+}
+
+.input:hover {
+    border: 3px solid #949494;
+    
+}
+
+.button {
+    width: 30%;
+    height:15%;
+    margin: 4% 0 0 65%;
+    color: white;
+    background-color: green;
+    border-radius: 4%;
+    border: none;
+    font-size: 1vw;
+    
+    
+}
+
+.button:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
+.button:enabled:hover {
+    background-color: rgb(6, 101, 6);
+}
+
+.button:enabled:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+  }
