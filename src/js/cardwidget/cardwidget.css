@@ -44,9 +44,9 @@
     height: 15%;
     border: 3px solid #bdbdbd;
     border-radius: 0.5rem;
-    font-size: 1.6vw;
+    font-size: 1.5vw;
     font-weight: 400;
-    text-align:center;
+    text-align: justify;
 }
 
 .input-card-checked {
