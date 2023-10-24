@@ -5,7 +5,7 @@ module.exports = {
     node: true,
   },
   plugins: ["prettier"],
-  extends: ["eslint:recommended", "plugin:prettier/recommended"], //airbnb-base
+  extends: ["eslint:recommended", ], //airbnb-base // "plugin:prettier/recommended"
   overrides: [
     {
       files: ["**/*.test.js"],

@@ -1,5 +1,5 @@
 import "./cardwidget.css";
-import { definePaymentSystem, validateCarNumber } from "./validate";
+import { definePaymentSystem, validateCardNumber } from "./validate";
 
 export default class CardWidget {
   constructor(widget) {
@@ -120,8 +120,8 @@ export default class CardWidget {
   }
 
   validateCardNumber() {
-    const result = validateCarNumber(this.input.value);
-    if (!result) {
+    const result = validateCardNumber(this.input.value);
+    if (result) {
       this.input.classList.add("input-card-checked");
     } else {
       this.input.classList.add("input-card-unchecked");

@@ -20,7 +20,7 @@ export function definePaymentSystem(code) {
   }
 }
 
-export function validateCarNumber(cardNumber) {
+export function validateCardNumber(cardNumber) {
   const arrayNumbers = cardNumber.split("");
   //const lastDigit = Number(arrayNumbers.pop());
   let buffer = 0;
@@ -31,5 +31,5 @@ export function validateCarNumber(cardNumber) {
     (i + 1) % 2 ? digit : (digit *= 2);
     digit > 9 ? (buffer += digit - 9) : (buffer += digit);
   }
-  return buffer % 10;
+  return buffer % 10 ? false : true;
 }
