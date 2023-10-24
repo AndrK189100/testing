@@ -32,8 +32,8 @@
     "webpack-dev-server": "^4.15.0"
   },
   "scripts": {
-    "test": "jest",
-    "coverage": "jest --coverage",
+    "test": "jest --testPathPattern=./__tests__",
+    "coverage": "jest --coverage --testPathPattern=./__tests__",
     "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint .",
